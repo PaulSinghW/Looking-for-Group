@@ -1,0 +1,634 @@
+/*
+This is the base style sheet for our website, LookingForGroup.
+The main styles that are common among all the different pages are documented on lines
+20 - 229. 
+The Index.html style attributes are in the first, main section of styles. 
+The Games.html style attributes are documented on lines 234 - 368.
+The AboutUs.html style attributes are doocumented on lines 373 - 491.
+The News.html style attributes are documented on lines 496 - 575.
+
+Some lines of code have been put into comments to document our original
+ideas and some styles that are a work in progress. 
+*/
+
+
+
+
+/* THISISMAIN */
+
+
+.navbar{
+	height: 70px;
+	width: 77px;	
+}
+
+@font-face {
+	font-family: "starduster";
+	src: url("StarDuster/starduster.ttf");
+}
+
+#header{
+	
+	background-color: #46718C;
+	height: 120px;
+	text-align: center;
+	font-size: 300%;
+	border: solid #394031;
+	border-width: thick 10px;
+	border-radius: 25px;
+	font-family: starduster;
+}
+
+#pageHeader {
+	text-align: center;
+	font-size: 200%;
+	color: white;
+}
+
+#footer{
+	background-color: #46718C;
+	position: fixed;
+	bottom: 0;
+	width: 98%;
+	border: solid #394031;
+	border-width: thick 10px;
+	border-radius: 25px;
+	height: 80px;
+	padding: 0;
+	text-align: center;
+	font-family: starduster;
+}
+
+
+#footerContent {
+	width: 750px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 250%;
+}
+
+body{
+	background-color: #F2F2F2;
+	font-family: Agency FB;
+}
+
+.alert {
+	color: red;
+}
+
+/*
+This next section applies to the navigation bar on the left side of each page. 
+5 elements(labelled H, A, N, G, and F) will appear to float in a vertical manner, 
+and upon hovering over one, it will expand to the right to reveal the full word. Its
+border will border and background-colour also changes slightly to signify an event. 
+Each element links to its respective page on the website. When scrolling up or down 
+on any page, it will stay in its position and follow the user.
+*/
+#menu {
+  float: left;
+  width: 7%;
+  padding: 1px;
+  margin-top: 80px; 
+  clear: bottom;
+  position: fixed;
+}
+
+#navList {
+	list-style-type: none;
+}
+
+ul li{margin-bottom:22px;}
+
+
+#navBarElement1:Before {
+	content: "\00007f\00007f\00007f\00007f\00007fHome\00007f\00007f\00007f\00007f\00007f\00007f";
+	width: 30px;
+	border: solid;
+	border-color: #394031;
+	border-radius: 30px;
+	font-family:starduster;
+    font-size: 200%;
+    color: #026799; 
+    padding: 10px;
+    margin: 5px;
+}
+
+#navBarElement1:hover:before {
+	opacity: 0.5;
+}
+
+#navBarElement2:Before {
+	content: "About\00007FUs";
+	width: 30px;
+	border: solid;
+	border-color: #394031;
+	border-radius: 30px;
+	font-family:starduster;
+    font-size: 200%;
+    color: #026799;
+    padding: 10px;
+    margin: 5px;
+}
+
+#navBarElement2:hover:before {
+	opacity: 0.5;
+}
+
+#navBarElement3:Before {
+	content: "\00007f\00007f\00007f\00007f\00007fNews\00007f\00007f\00007f\00007f\00007f\00007f";
+	width: 30px;
+	border: solid;
+	border-color: #394031;
+	border-radius: 30px;
+	font-family:starduster;
+    font-size: 200%;
+    color: #026799; 
+    padding: 10px;
+    margin: 5px;
+}
+
+#navBarElement3:hover:before {
+	opacity: 0.5;
+}
+
+#navBarElement4:Before {
+	content: "\00007f\00007f\00007f\00007fGames\00007f\00007f\00007f\00007f";
+	width: 30px;
+	border: solid;
+	border-color: #394031;
+	border-radius: 30px;
+	font-family:starduster;
+    font-size: 200%;
+    color: #026799; 
+    padding: 10px;
+    margin: 5px;
+}
+
+#navBarElement4:hover:before {
+	opacity: 0.5;
+}
+
+#navBarElement5:Before {
+	content: "\00007f\00007f\00007f\00007fForum\00007f\00007f\00007f\00007f";
+	width: 30px;
+	border: solid;
+	border-color: #394031;
+	border-radius: 30px;
+	font-family:starduster;
+    font-size: 200%;
+    color: #026799; 
+    padding: 10px;
+    margin: 5px;
+}
+
+#navBarElement5:hover:before {
+	opacity: 0.5;
+}
+
+#spacer{
+	height: 50px;	
+}
+
+#missionstatement{
+	background-color: #C0F1FF;	
+	
+	border-style: solid;
+	border-width: 2px;	
+	padding-left:12px;
+	padding-right: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	border-radius: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+}
+
+#signup{
+	background-color: #C0F1FF;	
+	height: 320px;
+	border-style: solid;	
+	border-width: 2px;
+	padding: 4px;
+	text-align: center;
+	padding-top:20px;
+	border-radius: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+}
+
+#mainContent {
+    /*width: 750px;
+	margin: 0 auto;
+	height: 2000px;*/
+	margin: auto;
+	padding: 20px;
+	width:60%;
+	height: 800px;
+}
+
+
+
+
+/* THISISGAMES */
+
+/*
+There are four main sections on this page(MMO, MOBA, RPG and BoardGames), that 
+use similar styling. When the user hovers over an element, the element's border 
+and background colour will change slightly to signify an event. Upon clicking on
+the element, it will expand vertically to display all the information
+on that topic. The element will retract upon clicking again to its original state.
+*/
+div.MMO {
+	background-color: #e6f9ff;	
+	height: 120px;	
+	border-style: solid;
+	border-color: #737373;
+	border-width: 2px;	
+	padding:4px;
+	text-align: center;
+	margin-top: 40px;
+	border-radius: 25px;
+	overflow: auto;
+	-webkit-box-sizing: border-box;
+	height: 15%;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+}
+
+div.MMO div {display: none;}
+
+.MMO:hover { 
+	background-color: #ccf3ff;
+	border-width: 4px;
+}
+
+.MMO img {
+	width: 200px;
+	height: 100px;
+	float: left;
+	padding: 8px;
+	border-radius: 25px;
+}	
+
+div.MOBA {
+	background-color: #e6f9ff;	
+	height: 120px;
+	border-style: solid;	
+	border-color: #737373;
+	border-width: 2px;
+	padding: 4px;
+	text-align: center;
+	border-radius: 25px;
+	overflow: auto;
+	-webkit-box-sizing: border-box;
+	height: 15%;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+}
+
+div.MOBA div {display: none;}
+
+
+.MOBA:hover { 
+	background-color: #ccf3ff;
+	border-width: 4px;
+}
+
+
+.MOBA img {
+	width: 200px;
+	height: 100px;
+	float: left;
+	padding: 8px;
+	border-radius: 25px;
+}
+
+div#RPG {
+	background-color: #e6f9ff;	
+	height: 120px;
+	border-style: solid;	
+	border-color: #737373;
+	border-width: 2px;
+	padding: 4px;
+	text-align: center;
+	border-radius: 25px;
+	overflow: auto;
+	-webkit-box-sizing: border-box;
+	height: 15%;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+}
+
+div#RPG div {display: none;}
+
+
+#RPG:hover { 
+	background-color: #ccf3ff;
+	border-width: 4px;
+}
+
+
+#RPG img {
+	width: 200px;
+	height: 100px;
+	float: left;
+	padding: 8px;
+	border-radius: 25px;
+}
+
+div#BG {
+	background-color: #e6f9ff;	
+	height: 120px;
+	border-style: solid;	
+	border-color: #737373;
+	border-width: 2px;
+	padding: 4px;
+	text-align: center;
+	border-radius: 25px;
+	overflow: auto;
+	-webkit-box-sizing: border-box;
+	height: 15%;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+}
+
+div#BG div {display: none;}
+
+
+#BG:hover { 
+	background-color: #ccf3ff;
+	border-width: 4px;
+}
+
+
+#BG img {
+	width: 200px;
+	height: 100px;
+	float: left;
+	padding: 8px;
+	border-radius: 25px;
+}
+
+#Table {
+	background-color: #e6f9ff;	
+	height: 200px;	
+	border-style: solid;
+	border-color: #737373;
+	border-width: 2px;	
+	padding:4px;
+	text-align: center;
+	margin-top: 40px;
+	border-radius: 25px;
+	overflow: auto;
+	margin-bottom: 120px;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+}
+
+
+
+
+/* THISISABOUTUS */
+
+/*
+This page is similar to the Games.html page in that there are 4 main 
+elements here that expand and retract. When the user hovers over an element, the 
+element's border and background colour will change slightly to signify an event. 
+Upon clicking on the element, however, it will expand both horizontally and vertically 
+to display all the information on that topic. The element will retract upon clicking 
+again to its original state.
+*/
+div.descriptionLeftAlex{
+background-color: #e6f9ff;	
+
+border-style: solid;	
+border-width: 2px;
+border-radius: 25px;
+border-color: #737373;
+padding: 4px;
+text-align: center;
+width:40%;
+float:left;
+margin-top: 20px;
+overflow:auto;
+-webkit-box-sizing: border-box;
+height: 18%;
+-moz-box-shadow: 10px 10px 5px #888;
+-webkit-box-shadow: 10px 10px 5px #888;
+box-shadow: 10px 10px 5px #888;
+}
+
+div.descriptionLeftAlex div {
+	display: none;
+}
+
+.descriptionLeftAlex:hover { 
+	background-color: #ccf3ff;
+	border-width: 4px;
+	height: 18%
+}
+
+div.descriptionLeftMisha{
+	background-color: #e6f9ff;	
+	
+	border-style: solid;	
+	border-width: 2px;
+	border-radius: 25px;
+	border-color: #737373;
+	padding: 4px;
+	text-align: center;
+	width:40%;
+	float:left;
+	margin-top: 20px;
+	overflow:auto;
+	-webkit-box-sizing: border-box;
+	height: 18%;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+}
+
+div.descriptionLeftMisha div {
+	display: none;
+}
+
+.descriptionLeftMisha:hover { 
+	background-color: #ccf3ff;
+	border-width: 4px;
+	height: 18%
+}
+
+#descriptionRightDasha{
+	background-color: #e6f9ff;	
+	
+	border-style: solid;	
+	border-radius: 25px;
+	border-width: 2px;
+	border-color: #737373;
+	padding: 4px;
+	text-align: center;
+	width:40%;
+	float:right;
+	margin-top: 20px;
+	overflow: auto;
+	-webkit-box-sizing: border-box;
+	height: 18%;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+}
+
+div#descriptionRightDasha div {
+	display: none;
+}
+
+#descriptionRightDasha:hover { 
+	background-color: #ccf3ff;
+	border-width: 4px;
+	height: 18%
+}
+
+#descriptionRightSimran{
+	background-color: #e6f9ff;	
+	
+	border-style: solid;	
+	border-radius: 25px;
+	border-width: 2px;
+	border-color: #737373;
+	padding: 4px;
+	text-align: center;
+	width:40%;
+	float:right;
+	margin-top: 20px;
+	overflow: auto;
+	-webkit-box-sizing: border-box;
+	height: 18%;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+}
+
+#descriptionRightSimran:hover { 
+	background-color: #ccf3ff;
+	border-width: 4px;
+	height: 18%
+}
+
+.spacerAboutUs {
+	height: 40px;
+	width: 100%;
+	overflow: auto;
+}
+
+
+
+
+/* THIS IS NEWS */
+
+/*
+There are 4 main elements on this page, MMO, MOBA, FPS and Board Games.
+These will be updated manually when there are new updates of a game in
+that category. The commented lines of code are our ideas for how we can 
+animate these elements when the user interacts with them.
+*/
+.newsSpacer{
+	height: 60px;
+	width: 100%;
+	overflow: auto;
+}
+
+.newsP{
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+div.firstNewsPost{
+	background-color: #e6f9ff;	
+	height: 200px;
+	border-style: solid;	
+	border-width: 2px;
+	border-radius: 25px;
+	border-color: #737373;
+	padding: 4px;
+	text-align: center;
+	width:100%;
+	float:left;
+	margin-top: 20px;
+	overflow:auto;
+	-webkit-box-sizing: border-box;
+	height: 15%;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+}
+
+div.secondNewsPost{
+	background-color: #e6f9ff;	
+	height: 200px;
+	border-style: solid;	
+	border-width: 2px;
+	border-radius: 25px;
+	border-color: #737373;
+	padding: 4px;
+	text-align: center;
+	width:100%;
+	float:left;
+	margin-top: 20px;
+	overflow:auto;
+	-webkit-box-sizing: border-box;
+	height: 15%;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+}
+
+div.thirdNewsPost{
+	background-color: #e6f9ff;	
+	height: 200px;
+	border-style: solid;	
+	border-width: 2px;
+	border-radius: 25px;
+	border-color: #737373;
+	padding: 4px;
+	text-align: center;
+	width:100%;
+	float:left;
+	margin-top: 20px;
+	overflow:auto;
+	-webkit-box-sizing: border-box;
+	height: 15%;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+}
+
+div.fourthNewsPost{
+	background-color: #e6f9ff;	
+	height: 200px;
+	border-style: solid;	
+	border-width: 2px;
+	border-radius: 25px;
+	border-color: #737373;
+	padding: 4px;
+	text-align: center;
+	width:100%;
+	float:left;
+	margin-top: 20px;
+	overflow:auto;
+	-webkit-box-sizing: border-box;
+	height: 15%;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+}
